@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form {
+    display: grid;                  /* Grid applied here */
+    grid-template-columns: 1fr 1fr; /* 2 equal columns */
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+input[type="submit"] {
+    grid-column: span 2;            /* Button takes full width */
+}
+</style>
+</head>
+<body>
+
+<form>
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>
